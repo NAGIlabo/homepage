@@ -8,15 +8,15 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 80%; /* コンテンツを中央に配置 */
     margin: 0 auto;
     padding: 20px;
 }
 
 /* ヘッダー */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* 背景色 */
+    color: #fff; /* 文字色 */
     padding: 20px 0;
 }
 
@@ -26,73 +26,75 @@ header h1 {
 }
 
 nav ul {
-    list-style: none;
-    text-align: center;
+    list-style: none; /* デフォルトのリストマーカーを削除 */
+    text-align: center; /* メニューを中央揃え */
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* リスト項目を横並びに */
+    margin: 0 15px; /* 横の間隔 */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+    color: #fff; /* リンクの文字色 */
+    text-decoration: none; /* 下線を削除 */
+    font-weight: bold; /* 太字 */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* ホバー時に下線を表示 */
 }
 
 /* ご訪問ありがとうございます セクション */
 .section {
-    padding: 50px 0;
+    padding: 50px 0; /* 上下の余白 */
 }
 
+/* 左側の内容 */
 .left {
-    width: 45%;
-    float: left;
-    padding: 20px;
+    width: 45%; /* 左側の幅 */
+    float: left; /* 左寄せに配置 */
+    padding: 20px; /* 内側の余白 */
 }
 
+/* 右側の内容 */
 .right {
-    width: 45%;
-    float: left;
-    padding: 20px;
+    width: 45%; /* 右側の幅 */
+    float: left; /* 左寄せに配置 */
+    padding: 20px; /* 内側の余白 */
 }
 
 .right ul {
-    list-style: none;
+    list-style: none; /* デフォルトのリストマーカーを削除 */
     padding: 0;
 }
 
 .right ul li {
-    margin: 10px 0;
+    margin: 10px 0; /* リスト項目の上下間隔 */
 }
 
 .right ul li a {
-    text-decoration: none;
-    color: #007BFF;
+    text-decoration: none; /* 下線を削除 */
+    color: #007BFF; /* リンクの色を青に */
 }
 
 .right ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* ホバー時に下線を表示 */
 }
 
 /* clearfixを追加して左右配置の後の要素が崩れないようにする */
 .container:after {
     content: "";
     display: table;
-    clear: both;
+    clear: both; /* 浮動要素の後にレイアウトが崩れないように */
 }
 
 /* フッター */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* 背景色 */
+    color: #fff; /* 文字色 */
     padding: 20px 0;
-    text-align: center;
+    text-align: center; /* 中央揃え */
 }
 

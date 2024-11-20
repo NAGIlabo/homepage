@@ -10,6 +10,7 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 /* ヘッダー */
@@ -45,73 +46,46 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* セクション */
+/* ご訪問ありがとうございます セクション */
 .section {
     padding: 50px 0;
 }
 
-.section h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.section p {
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.gallery .item {
-    text-align: center;
-    width: 30%;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-/* お問い合わせフォーム */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
+.left {
+    width: 45%;
+    float: left;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form label {
-    display: block;
-    margin-bottom: 8px;
+.right {
+    width: 45%;
+    float: left;
+    padding: 20px;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.right ul {
+    list-style: none;
+    padding: 0;
 }
 
-form button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
+.right ul li {
+    margin: 10px 0;
 }
 
-form button:hover {
-    background-color: #555;
+.right ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.right ul li a:hover {
+    text-decoration: underline;
+}
+
+/* clearfixを追加して左右配置の後の要素が崩れないようにする */
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* フッター */
@@ -121,3 +95,4 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
